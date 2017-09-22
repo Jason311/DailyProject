@@ -34,9 +34,9 @@ public class MainActivity extends AppCompatActivity {
 
         initData();
 
-//        setAdapter1();
+        setAdapter1();
 //        setAdapter2();
-        setAdapter3();
+//        setAdapter3();
 
     }
 
