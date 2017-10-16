@@ -13,9 +13,7 @@ import android.widget.LinearLayout;
 import com.jason.dailyproject.R;
 import com.jason.dailyproject.gallery2.adapter.MyViewPagerAdapter;
 import com.jason.dailyproject.gallery2.adapter.MyVpAdapter;
-import com.jason.dailyproject.gallery2.mytransformer.AlphaTransformer;
 import com.jason.dailyproject.gallery2.mytransformer.GallyPageTransformer;
-import com.jason.dailyproject.gallery2.mytransformer.ScaleTransformer;
 import com.jason.dailyproject.gallery2.mytransformer.ScaleTransformer2;
 
 import java.util.ArrayList;
@@ -48,17 +46,17 @@ public class MainActivity extends AppCompatActivity {
         ImageView fourth = new ImageView(MainActivity.this);
         ImageView fifth = new ImageView(MainActivity.this);
 
-        first.setImageBitmap(ImageUtil.getReverseBitmapById(R.mipmap.d, MainActivity.this));
-        second.setImageBitmap(ImageUtil.getReverseBitmapById(R.mipmap.f, MainActivity.this));
-        third.setImageBitmap(ImageUtil.getReverseBitmapById(R.mipmap.pic4, MainActivity.this));
-        fourth.setImageBitmap(ImageUtil.getReverseBitmapById(R.mipmap.pic5, MainActivity.this));
-        fifth.setImageBitmap(ImageUtil.getReverseBitmapById(R.mipmap.pic6, MainActivity.this));
+//        first.setImageBitmap(ImageUtil.getReverseBitmapById(R.mipmap.d, MainActivity.this));
+//        second.setImageBitmap(ImageUtil.getReverseBitmapById(R.mipmap.f, MainActivity.this));
+//        third.setImageBitmap(ImageUtil.getReverseBitmapById(R.mipmap.pic4, MainActivity.this));
+//        fourth.setImageBitmap(ImageUtil.getReverseBitmapById(R.mipmap.pic5, MainActivity.this));
+//        fifth.setImageBitmap(ImageUtil.getReverseBitmapById(R.mipmap.pic6, MainActivity.this));
 
-//        first.setImageResource(R.mipmap.first);
-//        second.setImageResource(R.mipmap.second);
-//        third.setImageResource(R.mipmap.third);
-//        fourth.setImageResource(R.mipmap.pic5);
-//        fifth.setImageResource(R.mipmap.fifth);
+        first.setImageResource(R.mipmap.d);
+        second.setImageResource(R.mipmap.f);
+        third.setImageResource(R.mipmap.pic4);
+        fourth.setImageResource(R.mipmap.pic5);
+        fifth.setImageResource(R.mipmap.pic6);
 
         imageViews.add(first);
         imageViews.add(second);
@@ -97,8 +95,8 @@ public class MainActivity extends AppCompatActivity {
         /**
          * 3种样式的PageTransformer
          */
-        ViewPager.PageTransformer transformer1 = new AlphaTransformer();
-        ViewPager.PageTransformer transformer2 = new ScaleTransformer();
+//        ViewPager.PageTransformer transformer1 = new AlphaTransformer();
+//        ViewPager.PageTransformer transformer2 = new ScaleTransformer();
         ViewPager.PageTransformer transformer3 = new GallyPageTransformer();
 
         mViewPager.setPageTransformer(true, transformer3);

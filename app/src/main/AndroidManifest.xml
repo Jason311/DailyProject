@@ -23,6 +23,11 @@
 
         <!--Gallery2样式图片activity-->
         <activity android:name=".gallery2.MainActivity"></activity>
+
+        <!--月签图片展示-->
+        <activity android:name=".daysign.DaySignActivity"></activity>
+        <!--Webview activity-->
+        <activity android:name=".daysign.WebViewActivity"></activity>
     </application>
 
 </manifest>
