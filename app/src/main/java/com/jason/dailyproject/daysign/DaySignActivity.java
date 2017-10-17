@@ -66,13 +66,17 @@ public class DaySignActivity extends AppCompatActivity {
 
     private void initData() {
         mpViews = new ArrayList<View>();
-        beanList.add(new DaySignImgBean("https://img3.doubanio.com/view/note/large/public/p9614520.jpg", "2016-7", "http://dwz.cn/6FqWL0"));
-        beanList.add(new DaySignImgBean("https://img1.doubanio.com/view/note/large/public/p9614519.jpg", "2016-6", "http://dwz.cn/6FqWFw"));
-        beanList.add(new DaySignImgBean("https://img1.doubanio.com/view/note/large/public/p9614517.jpg", "2016-5", "http://dwz.cn/6FqWoR"));
-        beanList.add(new DaySignImgBean("https://img3.doubanio.com/view/note/large/public/p9614515.jpg", "2016-4", "http://dwz.cn/6FqW8X"));
-        beanList.add(new DaySignImgBean("https://img3.doubanio.com/view/note/large/public/p9614512.jpg", "2016-3", "http://dwz.cn/6FqV1Y"));
-        beanList.add(new DaySignImgBean("https://img3.doubanio.com/view/note/large/public/p9614511.jpg", "2016-2", "http://dwz.cn/6FqU8A"));
-        beanList.add(new DaySignImgBean("https://img1.doubanio.com/view/note/large/public/p9614509.jpg", "2016-1", "http://dwz.cn/6FqThj"));
+        String imgUrl1 = "https://qiniu.image.cq-wnl.com/sentenceimg/";
+        String imgUrl2 = ".jpg?imageView2/1/w/1160/h/1406/q/90";
+        String detailsUrl1 = "http://www.51wnl.com/products.html?f=13&date=";
+        String detailsUrl2 = "&p=i&index=0";
+        beanList.add(new DaySignImgBean(imgUrl1 + "2017101742e884e46c3a48f0a82e8b2591abb799" + imgUrl2, "2017-10-17", "http://dwz.cn/6FxTWY"));
+        beanList.add(new DaySignImgBean(imgUrl1 + "2017101694022dd4f0224ce0ac066223220b2148" + imgUrl2, "2017-10-16", "http://dwz.cn/6FxVF8"));
+        beanList.add(new DaySignImgBean(imgUrl1 + "2017101586b86a08342a47f7add1c3ecbccd9fd3" + imgUrl2, "2017-10-15", "http://dwz.cn/6FxXv7"));
+        beanList.add(new DaySignImgBean(imgUrl1 + "2017101432d29ad49e9849e59a24073270550981" + imgUrl2, "2017-10-14", "http://dwz.cn/6FyL6I"));
+        beanList.add(new DaySignImgBean(imgUrl1 + "20171013c5d4c55751a94da68100a79029a5938f" + imgUrl2, "2017-10-13", "http://dwz.cn/6FyM5f"));
+        beanList.add(new DaySignImgBean(imgUrl1 + "20171012f9942156a7544ff898cedac622939801" + imgUrl2, "2017-10-12", "http://dwz.cn/6FyN0z"));
+        beanList.add(new DaySignImgBean(imgUrl1 + "20171011640e9be5099e4d2ba75dc38cda51c720" + imgUrl2, "2017-10-11", "http://dwz.cn/6FyO3I"));
         for (int i = 0; i < beanList.size(); i++) {
             View v = LayoutInflater.from(this).inflate(R.layout.item_daysign_vp, null);
             mpViews.add(v);

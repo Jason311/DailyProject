@@ -46,7 +46,7 @@ public class MainActivity extends AppCompatActivity {
     private void initData() {
         IntentBean bean1 = new IntentBean(new GalleryMainActivity(), "Gallery1图片展示");
         IntentBean bean2 = new IntentBean(new com.jason.dailyproject.gallery2.MainActivity(), "Gallery2图片展示");
-        IntentBean bean3 = new IntentBean(new DaySignActivity(), "月签图片轮播，viewpager图片首次进入向左滑动");
+        IntentBean bean3 = new IntentBean(new DaySignActivity(), "仿万年历图片轮播，viewpager图片加载后向右滑动");
         intentBeanList.add(bean1);
         intentBeanList.add(bean2);
         intentBeanList.add(bean3);
